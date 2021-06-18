@@ -38,7 +38,7 @@ check_files () {
 
 	# ABCコンテストについての特殊割当
 	if [ ${dir_l} = "ABC" ]; then
-		if [[ ${number} -lt 126 ]]; then
+		if [[ ${2} -lt 126 ]]; then
 			L=(A B C D)
 		else
 			L=(A B C D E F)
