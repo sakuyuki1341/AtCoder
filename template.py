@@ -3,7 +3,7 @@ import math
 """
 # 1行に1つの文字列の入力を取得し、出力する
 s = input()
-#print(str)
+#print(s)
 """
 
 """
@@ -34,5 +34,12 @@ s = [input() for i in range(n)] #nは場合に応じて定数を入れる
 # 最初に入力回数、次に入力値を取得し、出力する
 N = int(input())
 s = [input() for i in range(N)]
+#print(s)
+"""
+
+"""
+# 最初に入力行数、次に入力値を複数取得し、出力する
+N = int(input())
+s = [list(map(int, input().split())) for i in range(N)]
 #print(s)
 """

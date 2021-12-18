@@ -38,10 +38,12 @@ check_files () {
 
 	# ABCコンテストについての特殊割当
 	if [ ${dir_l} = "ABC" ]; then
-		if [[ ${2} -lt 126 ]]; then
+		if [[ ${number} -lt 126 ]]; then
 			L=(A B C D)
-		else
+		elif [[ ${number} -lt 212 ]]; then
 			L=(A B C D E F)
+		else
+			L=(A B C D E F G H)
 		fi
 
 	# ARCコンテストについての特殊割当
