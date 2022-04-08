@@ -1,5 +1,6 @@
 import math
 
+# 入力---------------------------------------------
 """
 # 1行に1つの文字列の入力を取得し、出力する
 s = input()
@@ -43,3 +44,24 @@ N = int(input())
 s = [list(map(int, input().split())) for i in range(N)]
 #print(s)
 """
+# -------------------------------------------------
+
+
+# 二部探索------------------------------------------
+"""
+def is_ok(mid):
+	if mid > 0:
+		return True
+	else:
+		return False
+
+def binaly_search(ok, ng):
+	while ng - ok > 1:
+		mid = (ok + ng) // 2
+		if is_ok(mid):
+			ok = mid
+		else:
+			ng = mid
+	return ok
+"""
+# -------------------------------------------------
